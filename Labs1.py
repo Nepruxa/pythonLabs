@@ -16,4 +16,12 @@ symb = "б"
 si = 0
 print ("Task 3: ", string.rfind(symb))
 
+#4
+numb = 10111011100
+zc = 0
+while (numb % 10) == 0:
+    zc +=1
+    numb = numb / 10
+print ("Task 4: ", zc)
+
     
