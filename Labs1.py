@@ -26,7 +26,7 @@ print ("Task 4: ", zc)
 
 #5
 str1 = "qwe"
-print ("Task 4: ", str1[::-1])
+print ("Task 5: ", str1[::-1])
 
 #6
 arr3 = [2,1,1,1,1,1,1]
@@ -34,4 +34,29 @@ flag1 = True
 for elem in arr3:
     if elem != arr3[0]:
         flag1 = False
-print ("Task 4: ", flag1)
+print ("Task 6: ", flag1)
+
+#7
+password = "123456789123547Hh"
+if 16 > len(password) or password.upper() == password or password.lower() == password:
+    print ("Task 7: ", False)
+else:
+    print ("Task 7: ", True)
+
+#8
+import numpy as np
+arr4 = np.array ([[2,3], [4,5]])
+print ("Task 8: ", arr4.flatten())
+
+#9
+d = {'q': 1.1, 'w' : 0.2, 'e' : 3.7, 'r' : 3.7}
+print ("Task 9: ", max (d, key = d.get))
+
+
+#10 
+arr5 = [1,1,2,3,4,4,5,6,7,7]
+resArr = []
+for elem in arr5:
+    if arr5.count(elem) > 1:
+        resArr.append(elem)
+print ("Task 10: ", resArr)
