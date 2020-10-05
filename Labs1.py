@@ -24,4 +24,14 @@ while (numb % 10) == 0:
     numb = numb / 10
 print ("Task 4: ", zc)
 
-    
+#5
+str1 = "qwe"
+print ("Task 4: ", str1[::-1])
+
+#6
+arr3 = [2,1,1,1,1,1,1]
+flag1 = True
+for elem in arr3:
+    if elem != arr3[0]:
+        flag1 = False
+print ("Task 4: ", flag1)
