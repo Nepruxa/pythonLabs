@@ -11,9 +11,8 @@ else:
     print ("Task 2: ", "-1")
 
 #3
-string = "сбербанк"
+string = "сбербанк банк"
 symb = "б"
-si = 0
 print ("Task 3: ", string.rfind(symb))
 
 #4
