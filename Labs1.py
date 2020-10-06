@@ -3,20 +3,30 @@ arr1 = [1,2,3,4,5,6]
 print ("Task 1: ", arr1[0], arr1[2], arr1[len(arr1)-2])
 
 #2
-arr2 = [1,2,3,4,5]
-N = 2
-if N <= len(arr2):
-    print("Task 2: ", arr2[N-1]**arr2[N-1])
+arr2 = [2,2,2,2,2]
+N = 5
+if len(arr2) >= N:
+    print("Task 2: ", arr2[N-1] ** N)
 else:
     print ("Task 2: ", "-1")
 
 #3
 string = "сбербанк банк"
+isFirstFlag = True
+symbolInd = 0
 symb = "б"
-print ("Task 3: ", string.rfind(symb))
+for elem in string : 
+    if string[symbolInd] == symb:
+        if isFirstFlag == False:
+            print ("Task 3: ", symbolInd)
+            break   
+        isFirstFlag = False
+        
+    symbolInd +=1
+
 
 #4
-numb = 10111011100
+numb = 110
 zc = 0
 while (numb % 10) == 0:
     zc +=1
