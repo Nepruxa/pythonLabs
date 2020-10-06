@@ -38,10 +38,7 @@ print ("Task 4: ", zc)
 
 #5
 str1 = "qwe"
-strRev = ""
-for elem in reversed(str1):
-    strRev += elem
-print ("Task 5: ", strRev)
+print("Task 5: ", str1[::-1])
 
 #6
 arr3 = [2,1,1,1,1,1,1]
@@ -52,16 +49,22 @@ for elem in arr3:
 print ("Task 6: ", flag1)
 
 #7
-password = "123456789123547Hh"
-if 16 > len(password) or password.upper() == password or password.lower() == password:
-    print ("Task 7: ", False)
-else:
+import re
+password = "12345ghH12312313sdsa"
+if re.search('^(?=.*[0-9].*)(?=.*[a-z].*)(?=.*[A-Z].*)[0-9a-zA-Z]{16,}$', password) is not None:
     print ("Task 7: ", True)
+else:
+    print ("Task 7: ", False)
 
 #8
-import numpy as np
-arr4 = np.array ([[2,3], [4,5]])
-print ("Task 8: ", arr4.flatten())
+arr4 = ([[2,3], [4,5], 5])
+resArr = []
+for elem in arr4:
+    if type(elem) == list:
+        resArr.extend(elem)
+    else:
+        resArr.append(elem)
+print ("Task 8: ", resArr)
 
 #9
 d = {'q': 1.1, 'w' : 0.2, 'e' : 3.7, 'r' : 3.7}
