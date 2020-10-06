@@ -26,16 +26,22 @@ for elem in string :
 
 
 #4
-numb = 110
+numb = 0
 zc = 0
+safe = len(str(numb))
 while (numb % 10) == 0:
+    if zc == safe:
+        break
     zc +=1
     numb = numb / 10
 print ("Task 4: ", zc)
 
 #5
 str1 = "qwe"
-print ("Task 5: ", str1[::-1])
+strRev = ""
+for elem in reversed(str1):
+    strRev += elem
+print ("Task 5: ", strRev)
 
 #6
 arr3 = [2,1,1,1,1,1,1]
