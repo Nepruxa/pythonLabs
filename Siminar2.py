@@ -1,4 +1,5 @@
-d = dict ()
+
+#1
 string = "zzzaabbbccc"
 maxim = 0
 arr = []
@@ -14,3 +15,4 @@ for elem in d:
         arr.append(elem)
 arr.sort()
 print ("Task 1 : ", arr[0])
+
