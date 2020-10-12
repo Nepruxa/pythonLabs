@@ -50,3 +50,15 @@ def longest(s):
 
 s = "aaaaaasssssssszzzzzzzz"
 print ("Task 3 : ", longest(s))
+
+#4 
+def bigBrother(s):
+    bB = ""
+    for elem in s: 
+        if elem.isalpha() and elem.isupper(): 
+            bB += elem
+    return bB
+s = "HEETEEtEEEfjskf SsdB123f??.,, U"
+print ("Task 4 : ", bigBrother(s))
+
+#5 
