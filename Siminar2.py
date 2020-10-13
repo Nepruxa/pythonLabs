@@ -62,3 +62,29 @@ s = "HEETEEtEEEfjskf SsdB123f??.,, U"
 print ("Task 4 : ", bigBrother(s))
 
 #5 
+array = [4,4,6,4,2,2,4,6]
+newArray = []
+maxim = 0
+d = {}
+i = 0
+count = 0
+for elem in array:
+       if d.get(elem) is not None:
+           d[elem] += 1
+       else: 
+            d[elem] = 1
+print (d)
+maxim = d[max(d, key = d.get)]
+print (maxim)
+count = len(d)
+print (count)
+while count > 0:
+    for elem in d:
+        if d[elem] == maxim:
+            i = d[elem]
+            while i > 0 : 
+                newArray.append(elem)
+                i -=1
+        maxim -= 1
+count -=1
+print ("Task 5 : ", newArray)
