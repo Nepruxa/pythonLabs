@@ -61,30 +61,64 @@ def bigBrother(s):
 s = "HEETEEtEEEfjskf SsdB123f??.,, U"
 print ("Task 4 : ", bigBrother(s))
 
-#5 
-array = [4,4,6,4,2,2,4,6]
-newArray = []
-maxim = 0
-d = {}
-i = 0
-count = 0
-for elem in array:
-       if d.get(elem) is not None:
-           d[elem] += 1
-       else: 
-            d[elem] = 1
-print (d)
-maxim = d[max(d, key = d.get)]
-print (maxim)
-count = len(d)
-print (count)
-while count > 0:
-    for elem in d:
-        if d[elem] == maxim:
-            i = d[elem]
-            while i > 0 : 
-                newArray.append(elem)
-                i -=1
+#5
+def task5(array):
+    newArray = []
+    maxim = 0
+    d = {}
+    i = 0
+    count = 0
+    for elem in array:
+        if d.get(elem) is not None:
+            d[elem] += 1
+        else: 
+                d[elem] = 1
+    maxim = d[max(d, key = d.get)]
+    count = len(d)
+    while count >= 0:
+        for elem in d:
+            if d[elem] == maxim:
+                i = d[elem]
+                while i > 0 : 
+                    newArray.append(elem)
+                    i -=1
         maxim -= 1
-count -=1
-print ("Task 5 : ", newArray)
+        count -=1
+    return newArray
+array = [4,4,6,4,2,2,4,6,6,6,6]
+print ("Task 5 : ", task5(array))
+
+#6
+def closest(number,arr):
+    arr = sorted (arr)
+    previous = arr[0]
+    for elem in arr:
+        if elem >= number:
+            return previous
+        else: previous = elem
+f = [[1,4,2,5], 3]
+print ("Task 6 : ", closest(f[1], f[0]))
+
+#7
+import numpy as np
+n = 8
+x = 0
+y = 0
+field = np.zeros((n,n), dtype=np.int64)
+for i in range(n-1,-1,-1):
+    for j in range(n):
+        if i == n-1:
+            field[i][j] = 1
+            continue
+        if j - 1 >= 0:
+            field[i][j] += field[i+1][j-1]
+        if j + 1 < n:
+            field[i][j] += field[i+1][j+1]
+def rec(x, y):
+    if y >= n-1:
+        return 1
+    left = rec(x-1, y+1) if x - 1 >= 0 else 0
+    right = rec(x+1, y+1) if x+1 < n else 0
+    return left + right
+
+print("Task 7 : ",rec(0, 0))
