@@ -1,0 +1,38 @@
+[2021-01-13 00:02:23,418] ERROR:Error in genres, check your input or if file with countries config exists: 
+'NoneType' object has no attribute 'split'
+[2021-01-13 00:03:31,943] ERROR:Error in genres, check your input or if file with countries config exists: 
+'NoneType' object has no attribute 'split'
+[2021-01-13 00:03:58,112] ERROR:Error in genres, check your input or if file with countries config exists: 
+'NoneType' object has no attribute 'split'
+[2021-01-13 00:10:15,212] ERROR:Error in genres, check your input or if file with countries config exists: 
+'NoneType' object has no attribute 'split'
+[2021-01-13 00:10:33,011] ERROR:Error in user_rating argument, check your input : 
+'NoneType' object has no attribute 'split'
+[2021-01-13 00:10:33,011] ERROR:Error in genres, check your input or if file with countries config exists: 
+'NoneType' object has no attribute 'split'
+[2021-01-13 00:34:31,710] DEBUG:Starting new HTTPS connection (1): www.imdb.com:443
+[2021-01-13 00:34:32,214] DEBUG:https://www.imdb.com:443 "GET /search/title/?title_types=feature,tv_movie&release_date=1995-10-21,2010-10-21&genres=action,sci-fi&user_rating=2.2,8.7&countries=cn,us&view=simple&count=250&start=1 HTTP/1.1" 200 None
+[2021-01-13 00:36:10,844] DEBUG:Starting new HTTPS connection (1): www.imdb.com:443
+[2021-01-13 00:36:11,222] DEBUG:https://www.imdb.com:443 "GET /search/title/?title_types=feature,tv_movie&release_date=1995-10-21,2010-10-21&genres=action,sci-fi&user_rating=2.2,8.7&countries=cn,us&view=simple&count=250&start=1 HTTP/1.1" 200 None
+[2021-01-13 00:36:32,689] DEBUG:Starting new HTTPS connection (1): www.imdb.com:443
+[2021-01-13 00:36:33,129] DEBUG:https://www.imdb.com:443 "GET /search/title/?title_types=feature,tv_movie&release_date=1995-10-21,2010-10-21&genres=action,sci-fi&user_rating=2.2,8.7&countries=cn,us&view=simple&count=250&start=1 HTTP/1.1" 200 None
+[2021-01-13 00:36:47,105] DEBUG:Starting new HTTPS connection (1): www.imdb.com:443
+[2021-01-13 00:36:47,518] DEBUG:https://www.imdb.com:443 "GET /search/title/?title_types=feature,tv_movie&release_date=1995-10-21,2010-10-21&genres=action,sci-fi&user_rating=2.2,8.7&countries=cn,us&view=simple&count=250&start=1 HTTP/1.1" 200 None
+[2021-01-13 00:36:48,383] DEBUG:Starting new HTTPS connection (1): www.imdb.com:443
+[2021-01-13 00:36:49,213] DEBUG:https://www.imdb.com:443 "GET /title/tt1220634/ HTTP/1.1" 200 None
+[2021-01-13 00:37:14,660] DEBUG:Starting new HTTPS connection (1): www.imdb.com:443
+[2021-01-13 00:37:15,151] DEBUG:https://www.imdb.com:443 "GET /search/title/?title_types=feature,tv_movie&release_date=1995-10-21,2010-10-21&genres=action,sci-fi&user_rating=2.2,8.7&countries=cn,us&view=simple&count=250&start=1 HTTP/1.1" 200 None
+[2021-01-13 00:37:15,394] DEBUG:Starting new HTTPS connection (1): www.imdb.com:443
+[2021-01-13 00:37:15,928] DEBUG:https://www.imdb.com:443 "GET /title/tt1220634/ HTTP/1.1" 200 None
+[2021-01-13 00:37:16,389] INFO:title info found
+[2021-01-13 00:37:16,391] DEBUG:Starting new HTTPS connection (1): www.imdb.com:443
+[2021-01-13 00:37:17,447] DEBUG:https://www.imdb.com:443 "GET /title/tt0852863/ HTTP/1.1" 200 None
+[2021-01-13 00:37:18,016] INFO:title info found
+[2021-01-13 00:37:18,017] DEBUG:Starting new HTTPS connection (1): www.imdb.com:443
+[2021-01-13 00:37:18,526] DEBUG:https://www.imdb.com:443 "GET /title/tt1307224/ HTTP/1.1" 200 None
+[2021-01-13 00:37:19,085] INFO:title info found
+[2021-01-13 00:37:19,086] DEBUG:Starting new HTTPS connection (1): www.imdb.com:443
+[2021-01-13 00:37:19,826] DEBUG:https://www.imdb.com:443 "GET /title/tt0448011/ HTTP/1.1" 200 None
+[2021-01-13 00:37:21,477] INFO:title info found
+[2021-01-13 00:37:21,478] DEBUG:Starting new HTTPS connection (1): www.imdb.com:443
+[2021-01-13 00:37:21,843] DEBUG:https://www.imdb.com:443 "GET /search/title/?title_types=feature,tv_movie&release_date=1995-10-21,2010-10-21&genres=action,sci-fi&user_rating=2.2,8.7&countries=cn,us&view=simple&count=250&start=5 HTTP/1.1" 200 None
